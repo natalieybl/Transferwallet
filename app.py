@@ -6,9 +6,5 @@ app=Flask(__name__)
 def index():
   return render_template('index.html')
 
-@app.route('/', methods=["get","post"])
-def dapp2():
-  return render_template('dapp2.html')
-
-  if __name__=='__main__':
+if __name__=='__main__':
     app.run()
